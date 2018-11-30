@@ -1,3 +1,18 @@
+//DECLARE STRUCTURES
+struct container{ int w; int h; int p; int s; };
+
+struct particle{
+ // 4 estados   4 direcciones
+ int  *x;
+ int  *y;
+ char *s;
+ int  *d;
+};
+
+//Synonyms for data
+typedef struct container Container;
+typedef struct particle Particle;
+
 void printContainer(Container C);
 void printParticula(Particle P, int size);
 void imprimirContainer(Container C, Particle P);
